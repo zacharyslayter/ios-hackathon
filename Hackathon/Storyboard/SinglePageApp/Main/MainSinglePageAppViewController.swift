@@ -16,6 +16,13 @@ class MainSinglePageAppViewController: UIViewController {
         
     }
     
+
+    @IBAction func factClicked(_ sender: Any) {
+        let catFactVC = UIStoryboard(name: "CatFactVC", bundle: nil).instantiateInitialViewController()
+        if catFactVC != nil {
+            navigationController?.pushViewController(catFactVC!, animated: true)
+        }
+    }
     @IBAction func giphyClicked(_ sender: Any) {
         let giphyViewController = UIStoryboard(name: "GiphyView", bundle: nil).instantiateInitialViewController()
         if giphyViewController != nil {
