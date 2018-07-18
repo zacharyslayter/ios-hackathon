@@ -5,6 +5,7 @@ target 'Hackathon' do
     pod 'Alamofire', '~> 4.7.2'
     pod 'SwiftyJSON', '~> 4.1.0'
     pod ‘ApiAI’
+    pod 'GiphyCoreSDK'
 
   target 'HackathonTests' do
     inherit! :search_paths
