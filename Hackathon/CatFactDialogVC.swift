@@ -7,12 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 class CatFactDialogVC: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
 }
