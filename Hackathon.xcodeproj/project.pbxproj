@@ -38,8 +38,8 @@
 		59EEEA7320FFF40B00600F5D /* CameraView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EEEA7220FFF40B00600F5D /* CameraView.storyboard */; };
 		59EEEA7520FFF41700600F5D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA7420FFF41700600F5D /* CameraViewController.swift */; };
 		59EEEA7720FFF76700600F5D /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA7620FFF76700600F5D /* CameraHandler.swift */; };
-		A44F9C8120FFFB9B0078F1BC /* CatFactDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44F9C8020FFFB9B0078F1BC /* CatFactDialogView.xib */; };
 		A44F9C8320FFFBED0078F1BC /* CatFactDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44F9C8220FFFBED0078F1BC /* CatFactDialogVC.swift */; };
+		A44F9C862100064F0078F1BC /* CatFactStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44F9C852100064F0078F1BC /* CatFactStoryboard.storyboard */; };
 		ADCBB6578C5D51D20C153721 /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0125BB61268967E79CBCAF0F /* Pods_Hackathon.framework */; };
 		D0AE0FF084135A3CA60F53CF /* Pods_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -108,8 +108,8 @@
 		59EEEA7620FFF76700600F5D /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		6B6873A1055C8629880C2E13 /* Pods-HackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.release.xcconfig"; sourceTree = "<group>"; };
 		986AAFC6B4360F2A5C5F5261 /* Pods-HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A44F9C8020FFFB9B0078F1BC /* CatFactDialogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatFactDialogView.xib; sourceTree = "<group>"; };
 		A44F9C8220FFFBED0078F1BC /* CatFactDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactDialogVC.swift; sourceTree = "<group>"; };
+		A44F9C852100064F0078F1BC /* CatFactStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatFactStoryboard.storyboard; sourceTree = "<group>"; };
 		A7D39417E4304F48E38E7113 /* Pods-HackathonTests.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.analyze.xcconfig"; sourceTree = "<group>"; };
 		F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -400,8 +400,8 @@
 		A44F9C7F20FFFAE30078F1BC /* FactView */ = {
 			isa = PBXGroup;
 			children = (
-				A44F9C8020FFFB9B0078F1BC /* CatFactDialogView.xib */,
 				A44F9C8220FFFBED0078F1BC /* CatFactDialogVC.swift */,
+				A44F9C852100064F0078F1BC /* CatFactStoryboard.storyboard */,
 			);
 			name = FactView;
 			sourceTree = "<group>";
@@ -541,9 +541,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5967752620FF950F00DEFD03 /* HomeNavBar.xib in Resources */,
+				A44F9C862100064F0078F1BC /* CatFactStoryboard.storyboard in Resources */,
 				5967751E20FF94EA00DEFD03 /* MainTabBar.storyboard in Resources */,
 				5967752220FF94F800DEFD03 /* Home.storyboard in Resources */,
-				A44F9C8120FFFB9B0078F1BC /* CatFactDialogView.xib in Resources */,
 				5967751A20FF94D700DEFD03 /* MainSinglePageApp.storyboard in Resources */,
 				5967752A20FF952300DEFD03 /* Explore.storyboard in Resources */,
 				5997C2E8203E05F3003AA57B /* LaunchScreen.storyboard in Resources */,

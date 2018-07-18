@@ -42,7 +42,7 @@
                                 <rect key="frame" x="29" y="96" width="30" height="30"/>
                                 <state key="normal" title="Fact"/>
                                 <connections>
-                                    <action selector="factClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="hhz-s5-gdv"/>
+                                    <action selector="factClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="Emq-0Z-e2I"/>
                                 </connections>
                             </button>
                         </subviews>

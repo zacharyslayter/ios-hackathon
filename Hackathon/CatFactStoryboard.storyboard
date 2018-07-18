@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="slD-ss-95B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat Fact DialogVC-->
+        <scene sceneID="fcX-OS-2kw">
+            <objects>
+                <viewController storyboardIdentifier="CatFactStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="slD-ss-95B" customClass="CatFactDialogVC" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="We0-Lb-rol">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*** It's Magical ***" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-Ef-pwu">
+                                <rect key="frame" x="46" y="104" width="271" height="269"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is a cat?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxF-3U-gPe">
+                                <rect key="frame" x="21" y="388" width="332" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zf-vM-LqX">
+                                <rect key="frame" x="122" y="439" width="141" height="30"/>
+                                <state key="normal" title="Ask the Cat Fact Bot"/>
+                                <connections>
+                                    <action selector="askQuestion:" destination="slD-ss-95B" eventType="touchUpInside" id="aV2-8x-wah"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HWo-Ef-pwu" firstAttribute="top" secondItem="u6g-CA-dRf" secondAttribute="top" constant="84" id="1Xq-SF-NhA"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="4zf-vM-LqX" secondAttribute="trailing" constant="112" id="7Et-Eb-Seh"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="oxF-3U-gPe" secondAttribute="trailing" constant="22" id="C41-qC-MOI"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="HWo-Ef-pwu" secondAttribute="trailing" constant="58" id="Yhu-zR-ExR"/>
+                            <constraint firstItem="HWo-Ef-pwu" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="46" id="btG-bM-jNz"/>
+                            <constraint firstItem="4zf-vM-LqX" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="122" id="gpU-Yw-5ov"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="bottom" secondItem="HWo-Ef-pwu" secondAttribute="bottom" constant="294" id="ip6-WX-Vrk"/>
+                            <constraint firstItem="4zf-vM-LqX" firstAttribute="top" secondItem="oxF-3U-gPe" secondAttribute="bottom" constant="21" id="ixl-1I-ddh"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="bottom" secondItem="4zf-vM-LqX" secondAttribute="bottom" constant="198" id="pwh-ek-oOf"/>
+                            <constraint firstItem="oxF-3U-gPe" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="21" id="sgI-zH-659"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u6g-CA-dRf"/>
+                    </view>
+                    <connections>
+                        <outlet property="catFactResponse" destination="HWo-Ef-pwu" id="9k0-gi-UAO"/>
+                        <outlet property="catQuestion" destination="oxF-3U-gPe" id="uCh-o6-c2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFF-R7-V7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="-16.641679160419791"/>
+        </scene>
+    </scenes>
+</document>

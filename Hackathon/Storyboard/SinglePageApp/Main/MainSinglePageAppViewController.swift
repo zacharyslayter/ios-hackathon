@@ -18,7 +18,7 @@ class MainSinglePageAppViewController: UIViewController {
     
 
     @IBAction func factClicked(_ sender: Any) {
-        let catFactVC = UIStoryboard(name: "CatFactVC", bundle: nil).instantiateInitialViewController()
+        let catFactVC = UIStoryboard(name: "CatFactStoryboard", bundle: nil).instantiateInitialViewController()
         if catFactVC != nil {
             navigationController?.pushViewController(catFactVC!, animated: true)
         }
@@ -31,9 +31,9 @@ class MainSinglePageAppViewController: UIViewController {
     }
     
     @IBAction func cameraClicked(_ sender: Any) {
-        CameraHandler.shared.camera(forViewController: self)
-        CameraHandler.shared.imagePickedBlock = { (image) in
+        //CameraHandler.shared.camera(forViewController: self)
+        //CameraHandler.shared.imagePickedBlock = { (image) in
             /* get your image here */
-        }
+       // }
     }
 }
