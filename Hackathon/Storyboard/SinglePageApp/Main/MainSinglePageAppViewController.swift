@@ -22,4 +22,11 @@ class MainSinglePageAppViewController: UIViewController {
             navigationController?.pushViewController(giphyViewController!, animated: true)
         }
     }
+    
+    @IBAction func cameraClicked(_ sender: Any) {
+        let cameraViewController = UIStoryboard(name: "CameraView", bundle: nil).instantiateInitialViewController()
+        if cameraViewController != nil {
+            navigationController?.pushViewController(cameraViewController!, animated: true)
+        }
+    }
 }

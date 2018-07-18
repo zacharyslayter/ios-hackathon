@@ -35,6 +35,8 @@
 		5997C304203E06CA003AA57B /* AccountLoginEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997C303203E06CA003AA57B /* AccountLoginEndpoints.swift */; };
 		59EEEA6E20FFE9C700600F5D /* GiphyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EEEA6D20FFE9C700600F5D /* GiphyView.storyboard */; };
 		59EEEA7020FFE9F600600F5D /* GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */; };
+		59EEEA7320FFF40B00600F5D /* CameraView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EEEA7220FFF40B00600F5D /* CameraView.storyboard */; };
+		59EEEA7520FFF41700600F5D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA7420FFF41700600F5D /* CameraViewController.swift */; };
 		ADCBB6578C5D51D20C153721 /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0125BB61268967E79CBCAF0F /* Pods_Hackathon.framework */; };
 		D0AE0FF084135A3CA60F53CF /* Pods_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +100,8 @@
 		5997C303203E06CA003AA57B /* AccountLoginEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountLoginEndpoints.swift; path = APIs/Account/AccountLoginEndpoints.swift; sourceTree = "<group>"; };
 		59EEEA6D20FFE9C700600F5D /* GiphyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GiphyView.storyboard; path = Storyboard/SinglePageApp/GiphyView/GiphyView.storyboard; sourceTree = "<group>"; };
 		59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiphyViewController.swift; path = Storyboard/SinglePageApp/GiphyView/GiphyViewController.swift; sourceTree = "<group>"; };
+		59EEEA7220FFF40B00600F5D /* CameraView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraView.storyboard; sourceTree = "<group>"; };
+		59EEEA7420FFF41700600F5D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6B6873A1055C8629880C2E13 /* Pods-HackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.release.xcconfig"; sourceTree = "<group>"; };
 		986AAFC6B4360F2A5C5F5261 /* Pods-HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D39417E4304F48E38E7113 /* Pods-HackathonTests.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.analyze.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 		5967751120FF949300DEFD03 /* SinglePageApp */ = {
 			isa = PBXGroup;
 			children = (
+				59EEEA7120FFF3F400600F5D /* CameraView */,
 				59EEEA6C20FFE98500600F5D /* GiphyView */,
 				5967751620FF94C100DEFD03 /* Main */,
 			);
@@ -363,6 +368,15 @@
 				59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */,
 			);
 			name = GiphyView;
+			sourceTree = "<group>";
+		};
+		59EEEA7120FFF3F400600F5D /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				59EEEA7220FFF40B00600F5D /* CameraView.storyboard */,
+				59EEEA7420FFF41700600F5D /* CameraViewController.swift */,
+			);
+			name = CameraView;
 			sourceTree = "<group>";
 		};
 		802F7618047DF793C3F0CA58 /* Frameworks */ = {
@@ -515,6 +529,7 @@
 				5967751A20FF94D700DEFD03 /* MainSinglePageApp.storyboard in Resources */,
 				5967752A20FF952300DEFD03 /* Explore.storyboard in Resources */,
 				5997C2E8203E05F3003AA57B /* LaunchScreen.storyboard in Resources */,
+				59EEEA7320FFF40B00600F5D /* CameraView.storyboard in Resources */,
 				5997C2E6203E05E8003AA57B /* Assets.xcassets in Resources */,
 				59EEEA6E20FFE9C700600F5D /* GiphyView.storyboard in Resources */,
 			);
@@ -653,6 +668,7 @@
 				59EEEA7020FFE9F600600F5D /* GiphyViewController.swift in Sources */,
 				5997C2E3203E05DA003AA57B /* UIImageView.swift in Sources */,
 				5997C302203E06BC003AA57B /* Account.swift in Sources */,
+				59EEEA7520FFF41700600F5D /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

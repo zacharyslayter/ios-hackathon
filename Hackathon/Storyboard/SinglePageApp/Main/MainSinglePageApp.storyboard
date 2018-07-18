@@ -31,11 +31,20 @@
                                     <action selector="giphyClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="7sM-Gy-FRp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7C-ih-inw">
+                                <rect key="frame" x="19" y="58" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="vy4-SW-fh3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qaW-JT-dWF" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="19" id="4fi-2h-eOh"/>
                             <constraint firstItem="qaW-JT-dWF" firstAttribute="top" secondItem="BFV-H0-eyd" secondAttribute="top" id="GTJ-jf-muZ"/>
+                            <constraint firstItem="d7C-ih-inw" firstAttribute="top" secondItem="qaW-JT-dWF" secondAttribute="bottom" constant="8" symbolic="YES" id="IXC-TQ-5WD"/>
+                            <constraint firstItem="d7C-ih-inw" firstAttribute="leading" secondItem="qaW-JT-dWF" secondAttribute="leading" id="jyq-5N-dbT"/>
                             <constraint firstItem="Ujb-pA-BlB" firstAttribute="centerY" secondItem="gkK-G5-hVk" secondAttribute="centerY" id="sQR-50-27Z"/>
                             <constraint firstItem="Ujb-pA-BlB" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="166" id="yGZ-Wj-BRL"/>
                         </constraints>
