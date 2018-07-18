@@ -6,7 +6,6 @@ target 'Hackathon' do
     pod 'SwiftyJSON', '~> 4.1.0'
     pod ‘ApiAI’
     pod 'GiphyCoreSDK'
-    pod ‘JSQMessagesViewController’
 
   target 'HackathonTests' do
     inherit! :search_paths

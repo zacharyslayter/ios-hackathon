@@ -26,16 +26,12 @@ PODS:
   - ApiAI/VoiceRequest (0.7.2):
     - ApiAI/Core
   - GiphyCoreSDK (1.2.0)
-  - JSQMessagesViewController (7.3.5):
-    - JSQSystemSoundPlayer (~> 2.0.1)
-  - JSQSystemSoundPlayer (2.0.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7.2)
   - ApiAI
   - GiphyCoreSDK
-  - JSQMessagesViewController
   - SwiftyJSON (~> 4.1.0)
 
 SPEC REPOS:
@@ -43,18 +39,14 @@ SPEC REPOS:
     - Alamofire
     - ApiAI
     - GiphyCoreSDK
-    - JSQMessagesViewController
-    - JSQSystemSoundPlayer
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   ApiAI: d4b49d3736f33ce6f3ef66dc33c0e0fccb23579e
   GiphyCoreSDK: 1278bfc2dbdc9f1b2b1703ee70224f515b9530a6
-  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
-  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 177200527d1a0fea86090e265f3f9897093e28e7
+PODFILE CHECKSUM: f69ba1ea472ce5761774cab71d2ada3a666dec3d
 
 COCOAPODS: 1.5.3
