@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ApiAI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController = UINavigationController(rootViewController: initialViewController!)
         self.window?.makeKeyAndVisible()
+        
+        // DialogFlow
+        let configuration: AIConfiguration = AIDefaultConfiguration()
+        
+        configuration.clientAccessToken = "384399e79f564b5ba78c01533800773e"
+        
+        //you would find the client access token in settings section of your agent at Dialogflow
+        
+        let apiai = ApiAI.shared()
+        
+        apiai?.configuration = configuration
         
         return true
     }
