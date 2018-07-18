@@ -11,5 +11,7 @@ import UIKit
 
 class CatFactDialogVC: UIViewController {
     
+    @IBOutlet weak var catFactResponse: UILabel!
+    @IBOutlet weak var catQuestion: UITextField!
     
 }
