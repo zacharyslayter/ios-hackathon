@@ -41,6 +41,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-ju-Z8o">
                                 <rect key="frame" x="29" y="96" width="30" height="30"/>
                                 <state key="normal" title="Fact"/>
+                                <connections>
+                                    <action selector="factClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="hhz-s5-gdv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
