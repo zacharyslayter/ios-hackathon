@@ -16,4 +16,10 @@ class MainSinglePageAppViewController: UIViewController {
         
     }
     
+    @IBAction func giphyClicked(_ sender: Any) {
+        let giphyViewController = UIStoryboard(name: "GiphyView", bundle: nil).instantiateInitialViewController()
+        if giphyViewController != nil {
+            navigationController?.pushViewController(giphyViewController!, animated: true)
+        }
+    }
 }

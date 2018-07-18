@@ -33,6 +33,8 @@
 		5997C300203E06B0003AA57B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997C2FF203E06B0003AA57B /* Address.swift */; };
 		5997C302203E06BC003AA57B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997C301203E06BC003AA57B /* Account.swift */; };
 		5997C304203E06CA003AA57B /* AccountLoginEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997C303203E06CA003AA57B /* AccountLoginEndpoints.swift */; };
+		59EEEA6E20FFE9C700600F5D /* GiphyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EEEA6D20FFE9C700600F5D /* GiphyView.storyboard */; };
+		59EEEA7020FFE9F600600F5D /* GiphyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */; };
 		ADCBB6578C5D51D20C153721 /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0125BB61268967E79CBCAF0F /* Pods_Hackathon.framework */; };
 		D0AE0FF084135A3CA60F53CF /* Pods_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		5997C2FF203E06B0003AA57B /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Models/Account/Components/Address.swift; sourceTree = "<group>"; };
 		5997C301203E06BC003AA57B /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Models/Account/Account.swift; sourceTree = "<group>"; };
 		5997C303203E06CA003AA57B /* AccountLoginEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountLoginEndpoints.swift; path = APIs/Account/AccountLoginEndpoints.swift; sourceTree = "<group>"; };
+		59EEEA6D20FFE9C700600F5D /* GiphyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GiphyView.storyboard; path = Storyboard/SinglePageApp/GiphyView/GiphyView.storyboard; sourceTree = "<group>"; };
+		59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiphyViewController.swift; path = Storyboard/SinglePageApp/GiphyView/GiphyViewController.swift; sourceTree = "<group>"; };
 		6B6873A1055C8629880C2E13 /* Pods-HackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.release.xcconfig"; sourceTree = "<group>"; };
 		986AAFC6B4360F2A5C5F5261 /* Pods-HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7D39417E4304F48E38E7113 /* Pods-HackathonTests.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.analyze.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 		5967751120FF949300DEFD03 /* SinglePageApp */ = {
 			isa = PBXGroup;
 			children = (
+				59EEEA6C20FFE98500600F5D /* GiphyView */,
 				5967751620FF94C100DEFD03 /* Main */,
 			);
 			name = SinglePageApp;
@@ -349,6 +354,15 @@
 				5997C2E7203E05F3003AA57B /* LaunchScreen.storyboard */,
 			);
 			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		59EEEA6C20FFE98500600F5D /* GiphyView */ = {
+			isa = PBXGroup;
+			children = (
+				59EEEA6D20FFE9C700600F5D /* GiphyView.storyboard */,
+				59EEEA6F20FFE9F600600F5D /* GiphyViewController.swift */,
+			);
+			name = GiphyView;
 			sourceTree = "<group>";
 		};
 		802F7618047DF793C3F0CA58 /* Frameworks */ = {
@@ -502,6 +516,7 @@
 				5967752A20FF952300DEFD03 /* Explore.storyboard in Resources */,
 				5997C2E8203E05F3003AA57B /* LaunchScreen.storyboard in Resources */,
 				5997C2E6203E05E8003AA57B /* Assets.xcassets in Resources */,
+				59EEEA6E20FFE9C700600F5D /* GiphyView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +646,7 @@
 				5997C2DB203E05BB003AA57B /* Constants_APIs.swift in Sources */,
 				5997C2E2203E05DA003AA57B /* DateFormatter.swift in Sources */,
 				5997C2DC203E05BB003AA57B /* Constants.swift in Sources */,
+				59EEEA7020FFE9F600600F5D /* GiphyViewController.swift in Sources */,
 				5997C2E3203E05DA003AA57B /* UIImageView.swift in Sources */,
 				5997C302203E06BC003AA57B /* Account.swift in Sources */,
 			);

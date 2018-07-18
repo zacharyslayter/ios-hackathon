@@ -24,9 +24,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-JT-dWF">
+                                <rect key="frame" x="19" y="20" width="40" height="30"/>
+                                <state key="normal" title="Giphy"/>
+                                <connections>
+                                    <action selector="giphyClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="7sM-Gy-FRp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qaW-JT-dWF" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="19" id="4fi-2h-eOh"/>
+                            <constraint firstItem="qaW-JT-dWF" firstAttribute="top" secondItem="BFV-H0-eyd" secondAttribute="top" id="GTJ-jf-muZ"/>
                             <constraint firstItem="Ujb-pA-BlB" firstAttribute="centerY" secondItem="gkK-G5-hVk" secondAttribute="centerY" id="sQR-50-27Z"/>
                             <constraint firstItem="Ujb-pA-BlB" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="166" id="yGZ-Wj-BRL"/>
                         </constraints>
