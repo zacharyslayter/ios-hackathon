@@ -274,6 +274,7 @@
 		5967751120FF949300DEFD03 /* SinglePageApp */ = {
 			isa = PBXGroup;
 			children = (
+				A44F9C7F20FFFAE30078F1BC /* FactView */,
 				59EEEA7120FFF3F400600F5D /* CameraView */,
 				59EEEA6C20FFE98500600F5D /* GiphyView */,
 				5967751620FF94C100DEFD03 /* Main */,
@@ -387,6 +388,13 @@
 				F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A44F9C7F20FFFAE30078F1BC /* FactView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FactView;
 			sourceTree = "<group>";
 		};
 		BE297BBC8EB6EE9C2AC8F070 /* Pods */ = {
