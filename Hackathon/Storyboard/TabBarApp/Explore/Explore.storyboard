@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OHO-RG-0XK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore-->
+        <scene sceneID="e4i-mc-gDw">
+            <objects>
+                <viewController title="Explore" id="WBM-82-bth" customClass="ExploreViewController" customModule="Shapes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ham-Xp-pqt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mdo-UF-Xiw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CrS-9O-0ZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="Explore" id="C6O-wD-cnC"/>
+                    <navigationItem key="navigationItem" id="eRi-gr-tfu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15u-PQ-JQ9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133.5999999999999" y="387.25637181409297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZEO-oE-pct">
+            <objects>
+                <navigationController id="OHO-RG-0XK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cMG-9j-2Nx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WBM-82-bth" kind="relationship" relationship="rootViewController" id="2aL-kh-iR1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXU-Oo-vDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Explore" width="30" height="30"/>
+    </resources>
+</document>
