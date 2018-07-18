@@ -24,9 +24,9 @@ class MainSinglePageAppViewController: UIViewController {
     }
     
     @IBAction func cameraClicked(_ sender: Any) {
-        let cameraViewController = UIStoryboard(name: "CameraView", bundle: nil).instantiateInitialViewController()
-        if cameraViewController != nil {
-            navigationController?.pushViewController(cameraViewController!, animated: true)
+        CameraHandler.shared.camera(forViewController: self)
+        CameraHandler.shared.imagePickedBlock = { (image) in
+            /* get your image here */
         }
     }
 }

@@ -13,7 +13,12 @@ class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+//        CameraHandler.shared.camera()
+        CameraHandler.shared.showActionSheet(vc: self)
+        CameraHandler.shared.imagePickedBlock = { (image) in
+            /* get your image here */
+        }
     }
     
 }
