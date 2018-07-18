@@ -4,6 +4,7 @@ use_frameworks!
 target 'Hackathon' do
     pod 'Alamofire', '~> 4.7.2'
     pod 'SwiftyJSON', '~> 4.1.0'
+    pod ‘ApiAI’
 
   target 'HackathonTests' do
     inherit! :search_paths
