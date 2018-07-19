@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309DDE1520FFF90C005AD81F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDE1420FFF90C005AD81F /* UIImage.swift */; };
 		5279549FB3EC423E5F0DC110 /* Pods_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2E29A8A3F11AF72AD152F4 /* Pods_HackathonTests.framework */; };
 		591852A71EA10F4800424619 /* HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591852A61EA10F4800424619 /* HackathonTests.swift */; };
 		591852B21EA10F4800424619 /* HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591852B11EA10F4800424619 /* HackathonUITests.swift */; };
@@ -68,6 +69,7 @@
 		259B17D4D95620C629AE300B /* Pods-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		2B2E29A8A3F11AF72AD152F4 /* Pods_HackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7CADD0D365D07F446F07C8 /* Pods-HackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonUITests/Pods-HackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		309DDE1420FFF90C005AD81F /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Extensions/UIImage.swift; sourceTree = "<group>"; };
 		4D4B5CE432F53E4B2A718BB7 /* Pods-HackathonUITests.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonUITests.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonUITests/Pods-HackathonUITests.analyze.xcconfig"; sourceTree = "<group>"; };
 		588774BCF5C9C3C1EDA23923 /* Pods-Hackathon.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.analyze.xcconfig"; sourceTree = "<group>"; };
 		5918528C1EA10F4800424619 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 				5997C2DF203E05DA003AA57B /* DateFormatter.swift */,
 				5997C2E1203E05DA003AA57B /* UIColor.swift */,
 				5997C2E0203E05DA003AA57B /* UIImageView.swift */,
+				309DDE1420FFF90C005AD81F /* UIImage.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				5997C2E2203E05DA003AA57B /* DateFormatter.swift in Sources */,
 				5997C2DC203E05BB003AA57B /* Constants.swift in Sources */,
 				59EEEA7020FFE9F600600F5D /* GiphyViewController.swift in Sources */,
+				309DDE1520FFF90C005AD81F /* UIImage.swift in Sources */,
 				5997C2E3203E05DA003AA57B /* UIImageView.swift in Sources */,
 				5997C302203E06BC003AA57B /* Account.swift in Sources */,
 				59EEEA7520FFF41700600F5D /* CameraViewController.swift in Sources */,
