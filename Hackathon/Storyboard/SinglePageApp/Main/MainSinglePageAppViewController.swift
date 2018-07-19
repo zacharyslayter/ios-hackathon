@@ -54,9 +54,7 @@ class MainSinglePageAppViewController: UIViewController {
             if giphyViewController != nil {
                 navigationController?.pushViewController(giphyViewController!, animated: true)
             }
-        }
-        
-        if text == "cam_cat" {
+        } else if text == "cam_cat" {
             CameraHandler.shared.camera(forViewController: self)
             CameraHandler.shared.imagePickedBlock = { (image) in
                 let model = Resnet50()
@@ -75,8 +73,9 @@ class MainSinglePageAppViewController: UIViewController {
                 
                 self.results.text = resultLabel;
             }
+        } else {
+            self.results.text = text
         }
-
     }
     
 
