@@ -160,3 +160,13 @@ class MainSinglePageAppViewController: UIViewController {
         return nil
     }
 }
+
+extension MainSinglePageAppViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+}

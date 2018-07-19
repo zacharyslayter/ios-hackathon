@@ -48,12 +48,14 @@
                                     <action selector="enterAction:" destination="YRs-he-LJ8" eventType="touchUpInside" id="ABQ-Vr-gMi"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-TN-0qa">
-                                <rect key="frame" x="136" y="420" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-TN-0qa">
+                                <rect key="frame" x="44" y="420" width="268" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YRs-he-LJ8" id="Rly-Rm-ndw"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-ru-qiz">
                                 <rect key="frame" x="9" y="520" width="356" height="137"/>
@@ -68,6 +70,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qaW-JT-dWF" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="11i-RZ-N1Y"/>
+                            <constraint firstItem="wgh-k7-xeH" firstAttribute="top" secondItem="uPB-TN-0qa" secondAttribute="bottom" constant="19" id="1TJ-6r-Mwj"/>
                             <constraint firstItem="D7e-ru-qiz" firstAttribute="top" secondItem="wgh-k7-xeH" secondAttribute="bottom" constant="21" id="2fz-Ns-juc"/>
                             <constraint firstItem="d7C-ih-inw" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="B7h-S3-dgU"/>
                             <constraint firstItem="BFV-H0-eyd" firstAttribute="trailing" secondItem="d7C-ih-inw" secondAttribute="trailing" constant="108" id="CdQ-NX-wfC"/>
@@ -78,7 +81,9 @@
                             <constraint firstItem="tlW-ju-Z8o" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="XSr-s1-orQ"/>
                             <constraint firstItem="tlW-ju-Z8o" firstAttribute="top" secondItem="d7C-ih-inw" secondAttribute="bottom" constant="52" id="eSz-Fo-e3f"/>
                             <constraint firstItem="wgh-k7-xeH" firstAttribute="centerX" secondItem="gkK-G5-hVk" secondAttribute="centerX" id="hgo-8Q-OGD"/>
+                            <constraint firstItem="BFV-H0-eyd" firstAttribute="trailing" secondItem="uPB-TN-0qa" secondAttribute="trailing" constant="63" id="kqe-Nj-xF4"/>
                             <constraint firstItem="qaW-JT-dWF" firstAttribute="top" secondItem="BFV-H0-eyd" secondAttribute="top" constant="99" id="o69-E3-DYO"/>
+                            <constraint firstItem="uPB-TN-0qa" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="44" id="qEt-s6-g5L"/>
                             <constraint firstItem="D7e-ru-qiz" firstAttribute="centerX" secondItem="tlW-ju-Z8o" secondAttribute="centerX" id="rAu-Lc-BmD"/>
                             <constraint firstItem="d7C-ih-inw" firstAttribute="top" secondItem="qaW-JT-dWF" secondAttribute="bottom" constant="61" id="tqR-r8-OgW"/>
                         </constraints>
