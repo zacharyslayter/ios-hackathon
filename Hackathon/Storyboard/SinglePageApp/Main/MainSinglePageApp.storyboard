@@ -18,28 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujb-pA-BlB">
-                                <rect key="frame" x="166" y="323" width="37" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-JT-dWF">
-                                <rect key="frame" x="19" y="20" width="40" height="30"/>
-                                <state key="normal" title="Giphy"/>
+                                <rect key="frame" x="107" y="119" width="160" height="30"/>
+                                <state key="normal" title="Giphy">
+                                    <color key="titleShadowColor" red="0.15128384655634675" green="1" blue="0.28110387200595621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="giphyClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="7sM-Gy-FRp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7C-ih-inw">
-                                <rect key="frame" x="19" y="58" width="54" height="30"/>
+                                <rect key="frame" x="107" y="210" width="160" height="30"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="cameraClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="vy4-SW-fh3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-ju-Z8o">
-                                <rect key="frame" x="29" y="96" width="30" height="30"/>
+                                <rect key="frame" x="107" y="292" width="160" height="30"/>
                                 <state key="normal" title="Fact"/>
                                 <connections>
                                     <action selector="factClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="Emq-0Z-e2I"/>
@@ -63,14 +59,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qaW-JT-dWF" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="19" id="4fi-2h-eOh"/>
-                            <constraint firstItem="qaW-JT-dWF" firstAttribute="top" secondItem="BFV-H0-eyd" secondAttribute="top" id="GTJ-jf-muZ"/>
-                            <constraint firstItem="d7C-ih-inw" firstAttribute="top" secondItem="qaW-JT-dWF" secondAttribute="bottom" constant="8" symbolic="YES" id="IXC-TQ-5WD"/>
-                            <constraint firstItem="d7C-ih-inw" firstAttribute="leading" secondItem="qaW-JT-dWF" secondAttribute="leading" id="jyq-5N-dbT"/>
-                            <constraint firstItem="tlW-ju-Z8o" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="29" id="muH-Zn-zAU"/>
-                            <constraint firstItem="Ujb-pA-BlB" firstAttribute="centerY" secondItem="gkK-G5-hVk" secondAttribute="centerY" id="sQR-50-27Z"/>
-                            <constraint firstItem="tlW-ju-Z8o" firstAttribute="top" secondItem="d7C-ih-inw" secondAttribute="bottom" constant="8" id="tOS-Pc-EJh"/>
-                            <constraint firstItem="Ujb-pA-BlB" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="166" id="yGZ-Wj-BRL"/>
+                            <constraint firstItem="qaW-JT-dWF" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="11i-RZ-N1Y"/>
+                            <constraint firstItem="d7C-ih-inw" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="B7h-S3-dgU"/>
+                            <constraint firstItem="BFV-H0-eyd" firstAttribute="trailing" secondItem="d7C-ih-inw" secondAttribute="trailing" constant="108" id="CdQ-NX-wfC"/>
+                            <constraint firstItem="BFV-H0-eyd" firstAttribute="trailing" secondItem="tlW-ju-Z8o" secondAttribute="trailing" constant="108" id="IXk-WD-Yhg"/>
+                            <constraint firstItem="BFV-H0-eyd" firstAttribute="trailing" secondItem="qaW-JT-dWF" secondAttribute="trailing" constant="108" id="X9F-6V-jmV"/>
+                            <constraint firstItem="tlW-ju-Z8o" firstAttribute="leading" secondItem="BFV-H0-eyd" secondAttribute="leading" constant="107" id="XSr-s1-orQ"/>
+                            <constraint firstItem="tlW-ju-Z8o" firstAttribute="top" secondItem="d7C-ih-inw" secondAttribute="bottom" constant="52" id="eSz-Fo-e3f"/>
+                            <constraint firstItem="qaW-JT-dWF" firstAttribute="top" secondItem="BFV-H0-eyd" secondAttribute="top" constant="99" id="o69-E3-DYO"/>
+                            <constraint firstItem="d7C-ih-inw" firstAttribute="top" secondItem="qaW-JT-dWF" secondAttribute="bottom" constant="61" id="tqR-r8-OgW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BFV-H0-eyd"/>
                     </view>
@@ -80,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Y0-9m-pCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215" y="161"/>
+            <point key="canvasLocation" x="213.59999999999999" y="160.56971514242881"/>
         </scene>
     </scenes>
 </document>
