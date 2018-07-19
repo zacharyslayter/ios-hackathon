@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainSinglePageApp-->
+        <!--Crazy Cats-->
         <scene sceneID="Mnd-xw-2aj">
             <objects>
-                <viewController storyboardIdentifier="MainSinglePageAppViewController" title="MainSinglePageApp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRs-he-LJ8" customClass="MainSinglePageAppViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainSinglePageAppViewController" title="Crazy Cats" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRs-he-LJ8" customClass="MainSinglePageAppViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkK-G5-hVk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -31,7 +31,9 @@ class GiphyViewController: UIViewController {
             // Retrieve just the first value
             let response = response
             let data = response!.data
-            let gifURL = "https://media.giphy.com/media/" + data![0].id + "/giphy.gif"
+            let size = data!.count
+            let randomInt =  Int(arc4random()) % size
+            let gifURL = "https://media.giphy.com/media/" + data![randomInt].id + "/giphy.gif"
             print(gifURL)
             let imageURL = UIImage.gifImageWithURL(gifUrl: gifURL)
             DispatchQueue.main.async {
