@@ -57,9 +57,23 @@ class MainSinglePageAppViewController: UIViewController {
         }
         
         if text == "cam_cat" {
-            let catFactVC = UIStoryboard(name: "CatFactStoryboard", bundle: nil).instantiateInitialViewController()
-            if catFactVC != nil {
-                navigationController?.pushViewController(catFactVC!, animated: true)
+            CameraHandler.shared.camera(forViewController: self)
+            CameraHandler.shared.imagePickedBlock = { (image) in
+                let model = Resnet50()
+                let buffer = self.getCVPixelBuffer(image.cgImage!)
+                
+                guard let prediction: Resnet50Output = try? model.prediction(image: buffer!) else {
+                    fatalError("something something")
+                }
+                
+                var resultLabel = ""
+                if (prediction.classLabel.contains("Cat") || prediction.classLabel.contains("cat")) {
+                    resultLabel = "THIS IS A CAT"
+                } else {
+                    resultLabel = "THIS IS NOT A CAT THIS IS A " + prediction.classLabel;
+                }
+                
+                self.results.text = resultLabel;
             }
         }
 
