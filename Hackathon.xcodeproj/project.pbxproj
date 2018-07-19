@@ -41,6 +41,7 @@
 		59EEEA7720FFF76700600F5D /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEEA7620FFF76700600F5D /* CameraHandler.swift */; };
 		A44F9C8320FFFBED0078F1BC /* CatFactDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44F9C8220FFFBED0078F1BC /* CatFactDialogVC.swift */; };
 		A44F9C862100064F0078F1BC /* CatFactStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44F9C852100064F0078F1BC /* CatFactStoryboard.storyboard */; };
+		A44F9C89210017340078F1BC /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A44F9C88210017340078F1BC /* Resnet50.mlmodel */; };
 		ADCBB6578C5D51D20C153721 /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0125BB61268967E79CBCAF0F /* Pods_Hackathon.framework */; };
 		D0AE0FF084135A3CA60F53CF /* Pods_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,7 @@
 		986AAFC6B4360F2A5C5F5261 /* Pods-HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A44F9C8220FFFBED0078F1BC /* CatFactDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactDialogVC.swift; sourceTree = "<group>"; };
 		A44F9C852100064F0078F1BC /* CatFactStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatFactStoryboard.storyboard; sourceTree = "<group>"; };
+		A44F9C88210017340078F1BC /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		A7D39417E4304F48E38E7113 /* Pods-HackathonTests.analyze.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTests.analyze.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTests/Pods-HackathonTests.analyze.xcconfig"; sourceTree = "<group>"; };
 		F75B11374D6833353836A4B1 /* Pods_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -205,6 +207,7 @@
 		5918528E1EA10F4800424619 /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				A44F9C88210017340078F1BC /* Resnet50.mlmodel */,
 				5930607F203CBC8900F7971D /* App */,
 				591852C31EA130BB00424619 /* Constants */,
 				59B491901EA683C600932A5C /* Components */,
@@ -684,6 +687,7 @@
 				5997C300203E06B0003AA57B /* Address.swift in Sources */,
 				5997C2DA203E05BB003AA57B /* Constants_Errors.swift in Sources */,
 				5997C2D6203E05AC003AA57B /* AppDelegate.swift in Sources */,
+				A44F9C89210017340078F1BC /* Resnet50.mlmodel in Sources */,
 				5997C2DB203E05BB003AA57B /* Constants_APIs.swift in Sources */,
 				A44F9C8320FFFBED0078F1BC /* CatFactDialogVC.swift in Sources */,
 				5997C2E2203E05DA003AA57B /* DateFormatter.swift in Sources */,
