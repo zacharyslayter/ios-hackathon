@@ -17,13 +17,57 @@
                     <view key="view" contentMode="scaleToFill" id="p9C-dV-Agg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oZV-D8-qbU">
+                                <rect key="frame" x="8" y="77" width="359" height="390"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr0-uD-cF9">
+                                <rect key="frame" x="87" y="487" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3cm-zk-k2O"/>
+                                    <constraint firstAttribute="height" constant="30" id="uuz-2j-7eW"/>
+                                </constraints>
+                                <state key="normal" title="😹 I'm Feline Lucky 🙀"/>
+                                <connections>
+                                    <action selector="felineLucky" destination="ALJ-Vy-BZC" eventType="touchUpInside" id="bMa-Hf-tDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TO-sL-t0B">
+                                <rect key="frame" x="170" y="562" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="ALJ-Vy-BZC" eventType="touchUpInside" id="o0C-uv-sdQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Gif" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-xu-F1I">
+                                <rect key="frame" x="142.5" y="20" width="90" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rVP-Nd-hcw" firstAttribute="bottom" secondItem="oZV-D8-qbU" secondAttribute="bottom" constant="200" id="1wl-fi-XWK"/>
+                            <constraint firstItem="oZV-D8-qbU" firstAttribute="top" secondItem="rVP-Nd-hcw" secondAttribute="top" constant="57" id="235-gM-w6b"/>
+                            <constraint firstItem="2aj-xu-F1I" firstAttribute="top" secondItem="rVP-Nd-hcw" secondAttribute="top" id="G4L-3u-Rkw"/>
+                            <constraint firstItem="rVP-Nd-hcw" firstAttribute="bottom" secondItem="Dr0-uD-cF9" secondAttribute="bottom" constant="150" id="P61-zv-FLY"/>
+                            <constraint firstItem="oZV-D8-qbU" firstAttribute="leading" secondItem="rVP-Nd-hcw" secondAttribute="leading" constant="8" id="Y3i-1z-aut"/>
+                            <constraint firstItem="rVP-Nd-hcw" firstAttribute="trailing" secondItem="oZV-D8-qbU" secondAttribute="trailing" constant="8" id="fHh-Kd-KZe"/>
+                            <constraint firstItem="2aj-xu-F1I" firstAttribute="centerX" secondItem="p9C-dV-Agg" secondAttribute="centerX" id="lpR-GX-jVw"/>
+                            <constraint firstItem="rVP-Nd-hcw" firstAttribute="bottom" secondItem="5TO-sL-t0B" secondAttribute="bottom" constant="75" id="mXi-T8-9de"/>
+                            <constraint firstItem="5TO-sL-t0B" firstAttribute="centerX" secondItem="p9C-dV-Agg" secondAttribute="centerX" id="nnn-2Z-Zoh"/>
+                            <constraint firstItem="Dr0-uD-cF9" firstAttribute="centerX" secondItem="p9C-dV-Agg" secondAttribute="centerX" id="oOS-ka-OSv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rVP-Nd-hcw"/>
                     </view>
+                    <connections>
+                        <outlet property="gifImageView" destination="oZV-D8-qbU" id="Ur2-n8-cuo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC3-Kj-Nc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110" y="179"/>
+            <point key="canvasLocation" x="109.59999999999999" y="178.56071964017991"/>
         </scene>
     </scenes>
 </document>
