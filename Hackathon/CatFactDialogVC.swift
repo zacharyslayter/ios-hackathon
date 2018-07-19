@@ -16,6 +16,10 @@ class CatFactDialogVC: UIViewController {
     @IBOutlet weak var catFactResponse: UILabel!
     @IBOutlet weak var catQuestion: UITextField!
     
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func askQuestion(_ sender: Any) {
         let request = ApiAI.shared().textRequest()
         
