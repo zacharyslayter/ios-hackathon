@@ -20,7 +20,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*** It's Magical ***" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-Ef-pwu">
                                 <rect key="frame" x="46" y="104" width="271" height="269"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,19 +37,26 @@
                                     <action selector="askQuestion:" destination="slD-ss-95B" eventType="touchUpInside" id="aV2-8x-wah"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="plZ-nw-EOt">
+                                <rect key="frame" x="23" y="477" width="330" height="170"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HWo-Ef-pwu" firstAttribute="top" secondItem="u6g-CA-dRf" secondAttribute="top" constant="84" id="1Xq-SF-NhA"/>
                             <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="4zf-vM-LqX" secondAttribute="trailing" constant="112" id="7Et-Eb-Seh"/>
                             <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="oxF-3U-gPe" secondAttribute="trailing" constant="22" id="C41-qC-MOI"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="bottom" secondItem="plZ-nw-EOt" secondAttribute="bottom" constant="20" id="PmZ-h5-Kzy"/>
+                            <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="plZ-nw-EOt" secondAttribute="trailing" constant="22" id="REz-5T-VFz"/>
                             <constraint firstItem="u6g-CA-dRf" firstAttribute="trailing" secondItem="HWo-Ef-pwu" secondAttribute="trailing" constant="58" id="Yhu-zR-ExR"/>
+                            <constraint firstItem="plZ-nw-EOt" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="23" id="YsY-id-Dnq"/>
                             <constraint firstItem="HWo-Ef-pwu" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="46" id="btG-bM-jNz"/>
                             <constraint firstItem="4zf-vM-LqX" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="122" id="gpU-Yw-5ov"/>
                             <constraint firstItem="u6g-CA-dRf" firstAttribute="bottom" secondItem="HWo-Ef-pwu" secondAttribute="bottom" constant="294" id="ip6-WX-Vrk"/>
                             <constraint firstItem="4zf-vM-LqX" firstAttribute="top" secondItem="oxF-3U-gPe" secondAttribute="bottom" constant="21" id="ixl-1I-ddh"/>
                             <constraint firstItem="u6g-CA-dRf" firstAttribute="bottom" secondItem="4zf-vM-LqX" secondAttribute="bottom" constant="198" id="pwh-ek-oOf"/>
                             <constraint firstItem="oxF-3U-gPe" firstAttribute="leading" secondItem="u6g-CA-dRf" secondAttribute="leading" constant="21" id="sgI-zH-659"/>
+                            <constraint firstItem="plZ-nw-EOt" firstAttribute="top" secondItem="4zf-vM-LqX" secondAttribute="bottom" constant="8" id="x0u-YC-A7U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u6g-CA-dRf"/>
                     </view>
