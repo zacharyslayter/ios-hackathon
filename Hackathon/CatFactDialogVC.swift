@@ -44,8 +44,24 @@ class CatFactDialogVC: UIViewController {
         speechSynthesizer.speak(speechUtterance)
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
             self.catFactResponse.text = text
+            self.catFactResponse.textColor = .random()
         }, completion: nil)
     
     }
     
+}
+
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(red:   .random(),
+                       green: .random(),
+                       blue:  .random(),
+                       alpha: 1.0)
+    }
 }
