@@ -45,6 +45,21 @@
                                     <action selector="factClicked:" destination="YRs-he-LJ8" eventType="touchUpInside" id="Emq-0Z-e2I"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgh-k7-xeH">
+                                <rect key="frame" x="166" y="469" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterAction:" destination="YRs-he-LJ8" eventType="touchUpInside" id="ABQ-Vr-gMi"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-TN-0qa">
+                                <rect key="frame" x="136" y="420" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -59,6 +74,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BFV-H0-eyd"/>
                     </view>
+                    <connections>
+                        <outlet property="enterText" destination="uPB-TN-0qa" id="Nm8-TJ-sci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Y0-9m-pCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

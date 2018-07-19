@@ -11,6 +11,15 @@ import UIKit
 
 class MainSinglePageAppViewController: UIViewController {
     
+    @IBOutlet weak var enterText: UITextField!
+    @IBAction func enterAction(_ sender: Any) {
+        let giphyViewController = UIStoryboard(name: "GiphyView", bundle: nil).instantiateInitialViewController() as? GiphyViewController
+        giphyViewController?.searchString = enterText.text!
+        if giphyViewController != nil {
+            navigationController?.pushViewController(giphyViewController!, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
